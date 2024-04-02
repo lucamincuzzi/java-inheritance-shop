@@ -15,6 +15,7 @@ public class Prodotto {
     // Costruttori
     public Prodotto(String nome, String marca, BigDecimal prezzo, BigDecimal iva) {
         this.codice = generaCodice();
+        this.nome = nome;
         this.marca = marca;
         this.prezzo = prezzo;
         this.iva = iva.divide(BigDecimal.valueOf(100), RoundingMode.HALF_DOWN);
@@ -69,6 +70,6 @@ public class Prodotto {
     }
 
     public String getInfoProdotto(){
-        return "Informazioni del prodotto: " + "Codice: " + getCodice() + "Nome: " + getNome() + "Marca: " + getMarca() + "Prezzo: " + getPrezzo() + "Prezzo con IVA: " + getPrezzoCompleto();
+        return "Informazioni del prodotto: " + "Codice: " + getCodice() + " " + "Nome: " + " " + getNome() + " " + "Marca: " + getMarca() + " " + "Prezzo: " + getPrezzo() + " " + "Prezzo con IVA: " + getPrezzoCompleto();
     }
 }
