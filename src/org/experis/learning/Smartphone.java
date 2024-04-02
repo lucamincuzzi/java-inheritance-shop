@@ -3,13 +3,13 @@ package org.experis.learning;
 import java.math.BigDecimal;
 import java.util.Random;
 
-public class Cuffia extends Prodotto{
+public class Smartphone extends Prodotto{
     // Attributi
     private int codiceIMEI;
     private int memoria;
 
     // Costruttori
-    public Cuffia(String nome, String marca, BigDecimal prezzo, BigDecimal iva, int codiceIMEI, int memoria) {
+    public Smartphone(String nome, String marca, BigDecimal prezzo, BigDecimal iva, int codiceIMEI, int memoria) {
         super(nome, marca, prezzo, iva);
         this.codiceIMEI = generaIMEI();
         this.memoria = memoria;
