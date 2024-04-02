@@ -9,7 +9,7 @@ public class Smartphone extends Prodotto{
     private int memoria;
 
     // Costruttori
-    public Smartphone(String nome, String marca, BigDecimal prezzo, BigDecimal iva, int codiceIMEI, int memoria) {
+    public Smartphone(String nome, String marca, BigDecimal prezzo, BigDecimal iva, int memoria) {
         super(nome, marca, prezzo, iva);
         this.codiceIMEI = generaIMEI();
         this.memoria = memoria;
