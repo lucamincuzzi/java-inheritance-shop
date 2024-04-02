@@ -67,4 +67,8 @@ public class Prodotto {
     public void setIva(BigDecimal iva) {
         this.iva = iva;
     }
+
+    public String getInfoProdotto(){
+        return "Informazioni del prodotto: " + "Codice: " + getCodice() + "Nome: " + getNome() + "Marca: " + getMarca() + "Prezzo: " + getPrezzo() + "Prezzo con IVA: " + getPrezzoCompleto();
+    }
 }
