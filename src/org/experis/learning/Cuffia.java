@@ -29,13 +29,18 @@ public class Cuffia extends Prodotto{
 
     public String isWireless() {
         if(isWireless){
-            return "Sono cuffie wireless";
+            return "Sì";
         } else {
-            return "Sono cuffie cablate";
+            return "No";
         }
     }
 
     public void setWireless(boolean wireless) {
         isWireless = wireless;
+    }
+
+    @Override
+    public String getInfoProdotto(){
+        return super.getInfoProdotto() + " " + "Colore: " + colore + " " + "Wireless: " + isWireless();
     }
 }

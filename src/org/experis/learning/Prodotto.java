@@ -70,6 +70,6 @@ public class Prodotto {
     }
 
     public String getInfoProdotto(){
-        return "Informazioni del prodotto: " + "Codice: " + getCodice() + " " + "Nome: " + " " + getNome() + " " + "Marca: " + getMarca() + " " + "Prezzo: " + getPrezzo() + " " + "Prezzo con IVA: " + getPrezzoCompleto();
+        return "Informazioni del prodotto: " + "Codice: " + getCodice() + " " + "Nome: " + getNome() + " " + "Marca: " + getMarca() + " " + "Prezzo: " + getPrezzo() + " " + "Prezzo con IVA: " + getPrezzoCompleto();
     }
 }

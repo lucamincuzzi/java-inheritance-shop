@@ -29,13 +29,18 @@ public class Televisore extends Prodotto{
 
     public String isSmart() {
         if(isSmart){
-            return "È un televisore smart";
+            return "Sì";
         } else {
-            return "Non è un televisore smart";
+            return "No";
         }
     }
 
     public void setSmart(boolean smart) {
         isSmart = smart;
+    }
+
+    @Override
+    public String getInfoProdotto(){
+        return super.getInfoProdotto() + " " + "Pollici: " + dimensioneSchermo + "Smart: " + isSmart();
     }
 }
